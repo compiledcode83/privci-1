@@ -1,9 +1,9 @@
-@extends('layouts.app', ['class' => 'bg-default'])
+@extends('layouts.app', ['class' => 'bg-white'])
 
 @section('content')
 @include('layouts.headers.guest')
 
-<div class="container mt--8 pb-5">
+<div class="container mt--9 pb-5">
     <div class="row justify-content-center">
         <div class="col-lg-5 col-md-7">
             <div class="card bg-secondary shadow border-0">
@@ -54,7 +54,7 @@
                             </label>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary my-4">{{ __('Sign in') }}</button>
+                            <button type="submit" class="btn btn-default my-4">{{ __('Sign in') }}</button>
                         </div>
                     </form>
                 </div>

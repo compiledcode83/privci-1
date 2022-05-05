@@ -24,6 +24,13 @@ Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
+Auth::routes();
+
+Route::get('/home1', [App\Http\Controllers\Home1Controller::class, 'index'])->name('home1');
+Auth::routes();
+
+Route::get('/home1', 'App\Http\Controllers\Home1Controller@index')->name('home1');
+
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'App\Http\Controllers\ProfileController@edit']);

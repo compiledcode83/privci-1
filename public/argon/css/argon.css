@@ -3294,15 +3294,15 @@ fieldset:disabled a.btn
 .btn-default
 {
     color: #fff;
-    border-color: #172b4d;
-    background-color: #172b4d;
+    border-color: #009683;
+    background-color: #009683;
     box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
 }
 .btn-default:hover
 {
     color: #fff;
-    border-color: #172b4d; 
-    background-color: #172b4d;
+    border-color: #009683; 
+    background-color: #009683;
 }
 .btn-default:focus,
 .btn-default.focus
@@ -15042,6 +15042,13 @@ button.bg-lighter:hover,
 button.bg-lighter:focus
 {
     background-color: #cbd3da !important;
+}
+
+.bg-gradient-privci
+{
+    background-size: cover;
+    background-position: center top 0;
+    background-image: url(https://privci.io/wp-content/uploads/2022/01/hosting-company-01.png),linear-gradient(237deg,#46b3ff 0%,#00380a 100%)!important;
 }
 
 .bg-gradient-primary

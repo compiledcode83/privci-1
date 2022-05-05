@@ -89,6 +89,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home1') }}">
+                        <i class="ni ni-tv-2 text-white"></i> <span class="text-white">{{ __('Home') }}</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('user.index') }}">
                         <i class="ni ni-planet text-white"></i> <span class="text-white">{{ __('Search') }}</span>
                     </a>
