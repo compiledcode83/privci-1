@@ -26,10 +26,15 @@ Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home1', [App\Http\Controllers\Home1Controller::class, 'index'])->name('home1');
+Route::get('/search', [App\Http\Controllers\SearchController::class, 'index'])->name('search');
 Auth::routes();
 
-Route::get('/home1', 'App\Http\Controllers\Home1Controller@index')->name('home1');
+Route::get('/search', 'App\Http\Controllers\SearchController@index')->name('search');
+
+Route::get('/account', 'App\Http\Controllers\AccountController@index')->name('account');
+
+
+
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);
