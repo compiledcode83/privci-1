@@ -1,4 +1,4 @@
-<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-dark" id="sidenav-main">
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light" style="background-color:#2e2e30;" id="sidenav-main">
     <div class="container-fluid">
         <!-- Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main"
@@ -85,12 +85,12 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="ni ni-tv-2 text-white"></i> <span class="text-white">{{ __('Dashboard') }}</span>
+                        <i class="ni ni-tv-2 text-white"></i> <span class="text-white">{{ __('Home') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home1') }}">
-                        <i class="ni ni-tv-2 text-white"></i> <span class="text-white">{{ __('Home') }}</span>
+                    <a class="nav-link" href="{{ route('search') }}">
+                        <i class="ni ni-tv-2 text-white"></i> <span class="text-white">{{ __('Search') }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
