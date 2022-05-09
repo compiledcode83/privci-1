@@ -20,6 +20,13 @@
     <link href="{{ asset('argon') }}/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
     <!-- Argon CSS -->
     <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <!-- <link type="text/css" href="{{ asset('argon') }}/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('argon') }}/css/custom.css">
+
 </head>
 
 <body class="{{ $class ?? '' }}">
@@ -40,7 +47,8 @@
     @endguest
 
     <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ asset('argon') }}/js/custom.js"></script>
 
     @stack('js')
 

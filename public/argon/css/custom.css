@@ -1,0 +1,162 @@
+div, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.main-content {
+  background-color: rgb(30,31,33);
+}
+
+.footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 3rem;
+  background: transparent !important;
+}
+
+.theme-color {
+  color: #009683 !important;
+}
+.theme-background-color {
+  background-color: #009683 !important;
+  color: white;
+}
+
+/* Begin Home Page Styles */
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+
+.filter-row button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+  width: auto;
+  height: 30px;
+  border: 0;
+  background-color: #009683;
+  color: white;
+}
+
+.main-card {
+  display: flex;
+  background-color: #2a2b2d;
+}
+.main-card .card-col {
+  padding: 10px;
+}
+.main-card .card-col:first-child {
+  min-width: 180px !important;
+}
+.main-card .card-col:first-child .inner-card {
+  height: 94%;
+}
+.inner-card {
+  background-color: #505052;
+}
+.medium-card {
+  background-color: #37383a;
+}
+
+.medium-card .page-show {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+  color: white;
+}
+.medium-card .search-result-info {
+  display: flex;
+}
+.medium-card .search-result-info p {
+  font-size: 13px;
+}
+
+.medium-card .page-selected {
+  border-radius: 5px;
+  background-color: white;
+  color: #009683;
+}
+.medium-card {
+  font-size: 13px;
+}
+
+.inner-card .accordian-container {
+  width: auto;
+  font-size: 13px;
+}
+.inner-card .accordian-container .accordion {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.inner-card .accordian-container .active,
+.inner-card .accordian-container .accordion:hover {
+  /* background-color: #ccc; */
+}
+.inner-card .accordian-container .panel {
+  margin: 5px;
+  padding: 0 18px;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.bottom-note {
+  font-size: 12px;
+  color: white;
+}
+/* End Home Page Styles */
+
+/* Begin Home Page Styles */
+.upload-note {
+  color: red;
+  font-size: 13px;
+}
+.faq-upload {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 3px gray ;
+}
+.faq-upload .add-tab {
+  max-width: 100%;
+  background-color: gray;
+}
+
+.faq-accordian {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.faq-active,
+.faq-accordian:hover {
+  background-color: #ccc;
+}
+.faq-panel {
+  padding: 0 18px;
+  font-size: 13px;
+  color: white;
+  background-color: gray;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* End Home Page Styles */
