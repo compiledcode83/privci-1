@@ -33,6 +33,9 @@ Route::get('/search', 'App\Http\Controllers\SearchController@index')->name('sear
 
 Route::get('/account', 'App\Http\Controllers\AccountController@index')->name('account');
 
+Route::get('/support', 'App\Http\Controllers\SupportController@index')->name('support');
+
+Route::get('/policy', 'App\Http\Controllers\PolicyController@index')->name('policy');
 
 
 
