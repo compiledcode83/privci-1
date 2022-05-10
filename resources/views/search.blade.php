@@ -8,17 +8,14 @@
         <h4 class="text-white">Is your email or the email of a colleague at risk?</h4>
         <h4 class="text-white">Have you submitted personal data to a site that has a data breach history?</h4>
         <h2 class="text-white">Enter an email address or the top level domain of a website to find out!</h2>
-        <select class="btn mt-4 mb-3">
-            <option>Search email address</option>
-            <option>Search website domain</option>
+        <select class="btn mt-4 mb-3" onChange="if(this.value == 1) document.getElementById('search-form').setAttribute('placeholder', 'Enter an email address...'); else document.getElementById('search-form').setAttribute('placeholder', 'Enter domain, for example: privci.com...');">
+            <option value="1">Search email address</option>
+            <option value="2">Search website domain</option>
         </select>
-        <div class="container col-md-5 d-flex bg-white rounded">
-            <input type="email" class="form-control border-0" id="email" placeholder="Enter an email address..." name="email">
-            <input type="url" class="form-control border-0" id="url" placeholder="Enter domain, for example: privci.com" name="url" hidden>
+        <div class="container d-flex bg-white rounded search-form">
+            <input type="email" class="form-control border-0" id="search-form" placeholder="Enter an email address..." name="email">
             <div class="d-flex align-items-center text-center">
                 <button class="btn p-0 border-0"><h4 class="p-1 border border-primary rounded text-dark">Search</h4></button>
-                
-
             </div>
         </div>
     </div>    

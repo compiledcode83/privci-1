@@ -4,7 +4,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   color: white;
 }
 
-.main-content {
+.container-fluid {
   background-color: rgb(30,31,33);
 }
 
@@ -35,7 +35,7 @@ div, h1, h2, h3, h4, h5, h6, p {
 .filter-row button {
   display: flex;
   align-items: center;
-  margin: 0 10px 0 10px;
+  margin: 0 20px 0 0;
   padding: 0 10px 0 10px;
   width: auto;
   height: 30px;
@@ -65,6 +65,7 @@ div, h1, h2, h3, h4, h5, h6, p {
 }
 
 .medium-card .page-show {
+  text-align: right;
   position: relative;
   top: 0px;
   right: 0px;
@@ -109,6 +110,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   padding: 0 18px;
   border-radius: 5px;
   font-size: 13px;
+  color: black;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -119,9 +121,140 @@ div, h1, h2, h3, h4, h5, h6, p {
   font-size: 12px;
   color: white;
 }
+.button-row button {
+  height: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .inner-card .medium-card .d-flex .justify-content-between {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .button-row .d-flex {
+    width: 100%;
+    justify-content: right;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .filter-row {
+    display: block;
+  }
+  .filter-row button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .main-card {
+    display: block;
+  }
+  .main-card .card-col:first-child .inner-card {
+    display: flex;
+    flex-wrap: wrap !important;
+  }
+  .main-card .card-col:first-child .inner-card .form-check {
+    width: 25%;
+    margin: 0 10px 0 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  .main-card .card-col:first-child .inner-card .form-check {
+    width: 35%;
+    margin: 0 10px 0 10px;
+  }
+  
+  .inner-card .medium-card .d-flex .page-show {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  
+}
+
+@media screen and (max-width: 479px) {
+  .button-row .d-flex {
+    display: block !important;
+    justify-content: right;
+  }
+  .button-row .d-flex button {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width: 359px) {
+  
+}
+
+
 /* End Home Page Styles */
 
-/* Begin Home Page Styles */
+
+
+/* Begin Search Page Styles */
+
+.search-form {
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1300px) {
+  
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+  
+}
+
+@media screen and (max-width: 575px) {
+  
+}
+
+@media screen and (max-width: 479px) {
+  
+}
+
+@media screen and (max-width: 359px) {
+  
+}
+
+/* End Search Page Styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Begin Policy Page Styles */
 .upload-note {
   color: red;
   font-size: 13px;
@@ -159,4 +292,4 @@ div, h1, h2, h3, h4, h5, h6, p {
   transition: max-height 0.2s ease-out;
 }
 
-/* End Home Page Styles */
+/* End Policy Page Styles */

@@ -4,22 +4,22 @@
 
 <div class="container-fluid pt-7 pb-7">
     <div class="filter-row">
-        <h3 class="text-white mb-0 text-right">Filter:</h3>
-        <button class="btn">
+        <h3 class="text-white mb-0 mr-2">Filter:</h3>
+        <button class="btn d-flex justify-content-between">
             Sort: A to Z
             <div class="d-flex flex-column ml-2">
                 <i class="fa-solid fa fa-angle-up m-0"></i> 
                 <i class="fa-solid fa fa-angle-down m-0"></i> 
             </div>
         </button>
-        <button class="btn">
+        <button class="btn d-flex justify-content-between">
             Sort: With a breach history
             <div class="d-flex flex-column ml-2">
                 <i class="fa-solid fa fa-angle-up m-0"></i> 
                 <i class="fa-solid fa fa-angle-down m-0"></i> 
             </div>
         </button>
-        <button class="btn">
+        <button class="btn d-flex justify-content-between">
             Sort: With the most email addresses
             <div class="d-flex flex-column ml-2">
                 <i class="fa-solid fa fa-angle-up m-0"></i> 
@@ -28,11 +28,13 @@
         </button>
     </div>
     <div class="main-card rounded">
-        <div class="card-col col-md-2">
+        
+
+        <div class="card-col col-lg-2 col-md-12">
             <div class="row m-0 mb-2 align-items-center">
                 <h2 class="text-white p-0 pl-2 m-0">Domain</h2>
             </div>
-            <div class="pt-3 pl-2 inner-card rounded">
+            <div class="pt-3 pl-2 pb-3 pr-2 inner-card rounded justify-content-between">
                 <div class="form-check d-flex align-items-center">
                     <input class="form-check-input" type="radio" name="" id="" checked/>
                     <label class="form-check-label text-white" for=""> securmind.com </label>
@@ -41,6 +43,23 @@
                     <input class="form-check-input" type="radio" name="" id=""/>
                     <label class="form-check-label text-white" for=""> securmind.com </label>
                 </div>
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="" id="" checked/>
+                    <label class="form-check-label text-white" for=""> securmind.com </label>
+                </div>
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="" id="" checked/>
+                    <label class="form-check-label text-white" for=""> securmind.com </label>
+                </div>
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="" id="" checked/>
+                    <label class="form-check-label text-white" for=""> securmind.com </label>
+                </div>
+                <div class="form-check d-flex align-items-center">
+                    <input class="form-check-input" type="radio" name="" id="" checked/>
+                    <label class="form-check-label text-white" for=""> securmind.com </label>
+                </div>
+                
             </div>
         </div>
         <div class="card-col">
@@ -59,7 +78,7 @@
             <div class="p-2 inner-card rounded">
                 <div class="p-2 medium-card rounded text-white">
                     <div class="d-flex mb-2 justify-content-between theme-color">
-                        <div class="col-sm-12 col-md-11 p-0 d-flex justify-content-between">
+                        <div class="col-md-11 p-0 d-flex justify-content-between">
                             <div class="d-flex align-items-center">
                                 <h4 class="m-0 mr-2 theme-color">Company Name:</h4>
                                 <p class="m-0">2fast4u</p>
@@ -126,7 +145,7 @@
                 <div class="pl-3 pt-2 medium-card rounded text-white">
                     <h4 class="mb-2 text-white">Users that may have submite or used their company email on <a class="theme-color">securmind.com</a></h4>
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="form-check">
                                 <label class="form-check-label" for="">
                                     <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
@@ -138,7 +157,7 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="form-check">
                                 <label class="form-check-label" for="">
                                     <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
@@ -149,23 +168,6 @@
                                     <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <label class="form-check-label" for="">
-                                    <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label" for="">
-                                    <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label" for="">
-                                    <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="form-check">
                                 <label class="form-check-label" for="">
                                     <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
@@ -182,7 +184,24 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="form-check">
+                                <label class="form-check-label" for="">
+                                    <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="">
+                                    <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="">
+                                    <input type="checkbox" class="form-check-input" id="" name="" value="something">adhere@me.com
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
                         </div>
                     </div>
                     <div class="row p-0 m-0 mt-3 justify-content-between">
@@ -194,14 +213,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row m-0 mt-4 justify-content-between">
-                <button class="btn btn-sm btn-danger"> Check if email is in a data breach</button>
+            <div class="row button-row m-0 mt-4 justify-content-between">
+                <div>
+                    <button class="btn btn-sm btn-danger"> Check if email is in a data breach</button>
+                    <p class="bottom-note"><strong>Note: </strong> You must select an email to use this feature</p>
+                </div>
                 <div class="d-flex p-0">
                     <button class="btn btn-sm theme-background-color mr-4">Send an email to selected user(s)</button>
                     <button class="btn btn-sm theme-background-color">Send a push notification</button>
                 </div>
             </div>
-            <p class="bottom-note"><strong>Note: </strong> You must select an email to use this feature</p>
+            
         </div>
     </div>
         

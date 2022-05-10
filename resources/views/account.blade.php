@@ -28,20 +28,20 @@
         <div class="card-header" style="background-color:rgb(42,43,45); border-radius:5px;">
             <h1 class="m-0 mr-2 text-white">Tracking Company Email</h1>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label text-white" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="tracking-company-email" id="account_radio_1" checked>
+                <label class="form-check-label text-white" for="account_radio_1">
                     Automatically track sites where user may have provided or used their company email address
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label text-white" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="tracking-company-email" id="account_radio_2">
+                <label class="form-check-label text-white" for="account_radio_2">
                     Allow users to approve which sites tomonitor after providing or using their company email address
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input color-red" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label text-red" for="flexRadioDefault1">
+                <input class="form-check-input color-red" type="radio" name="tracking-company-email" id="account_radio_3">
+                <label class="form-check-label text-red" for="account_radio_3">
                     Stop tracking
                 </label>
             </div>
@@ -51,13 +51,28 @@
         <div class="card-header" style="background-color:rgb(42,43,45); border-radius:5px;">
             <h1 class="m-0 mr-2 text-white">Notifications</h1>
             <div class="form-check">
-                <label class="form-check-label" for="">
-                    <input type="checkbox" class="form-check-input" id="" name="" value="something">I want to be notified in the event where my company email address is found in a data breach in the future.
+                <input type="checkbox" class="form-check-input" id="account_notification" name="" value="something">
+                <label class="form-check-label" for="account_notification">
+                    I want to be notified in the event where my company email address is found in a data breach in the future.
                 </label>
             </div>
-            <div class="d-flex">
-                <h3 class="m-0 mr-2 p-0 text-white">Send email notifications to: </h3>
-                <p class="col-4 m-0 text-white">infosec@company.com <i class="fa fa-edit"></i></p>
+            <div class="d-flex align-items-center">
+                <h3 class="m-0 mr-2 p-0">Send email notifications to: </h3>
+                <div class="d-flex align-items-center" id="notification_p">
+                    <p>infosec@company.com </p>
+                    <i class="fa fa-edit ml-2" onClick="
+                        document.getElementById('notification_p').setAttribute('style', 'display:none !important');
+                        document.getElementById('notification_input').style.display = '';
+                    "></i>
+                </div>
+                <div class="d-flex align-items-center" id="notification_input" style="display:none !important">
+                    <input type="text" class="pl-2 pr-2 rounded" value="infosec@company.com">
+                    <i class="fa fa-save ml-2" onClick="
+                        document.getElementById('notification_p').children[0].innerHTML = document.getElementById('notification_input').children[0].value;
+                        document.getElementById('notification_p').style.display = '';
+                        document.getElementById('notification_input').setAttribute('style', 'display:none !important');
+                    "></i>
+                </div>
             </div>
         </div>
     </div>

@@ -36,32 +36,28 @@
     <div class="faq-accordian-container">
         <div class="faq-upload">
             <h2 class="text-white mr-3">Documents Uploaded</h2>
-            <!-- <h3 class="col add-tab border-gray bg-gray text-white p-2">Add a FAQ (up to 5 FAQ may be added)</h3> -->
             <div class="col add-tab border-gray text-white p-2 faq-accordion">Add a FAQ (up to 5 FAQ may be added)</div>
         </div>
-            <!-- <button class="faq-accordion">Add a FAQ (up to 5 FAQ may be added)</button> -->
         <div class="faq-panel">
             <h4>A list of Frequently Asked Questions will be added to the extension and will be visible to colleagues within your organization</h4>
             <p>You may want to answer questioins regarding data DOs and DONTs, data sharing procedures, an the contact details of your Data Protection Officer.</p>
             <div class="d-flex align-items-center mb-1">
                 <h3 class="col-2">Questions:</h3>
-                <input type="text" class="form-control" placeholder="Maximum of 60 characters...">
+                <input type="text" class="col-8 form-control" placeholder="Maximum of 60 characters..." id="doc_question" value="">
             </div>
             <div class="d-flex mb-2">
                 <h3 class="col-2">Answer:</h3>
-                <textarea name="" id="" cols="" rows="5" class="form-control" placeholder="Maximum of 1000 characters..."></textarea>
+                <textarea name="" cols="" rows="5" class="col-8 form-control" placeholder="Maximum of 1000 characters..." id="doc_answer"></textarea>
+                <div class="col-2 d-flex align-items-end">
+                    <button class="btn theme-background-color" onClick="onAddDocument()">Add</button>
+                </div>
             </div>
         </div>
-        <div class="mt-2 mb-3 pl-2">
+        <div class="mt-2 mb-3 pl-2" id="documents_uploaded">
             <div class="d-flex align-items-center theme-color">
                 <p class="mr-2 theme-color">1 - (title of document if provided)</p>
-                <i class="mr-1 fa fa-edit"></i>
-                <i class="fa fa-trash"></i>
-            </div>
-            <div class="d-flex align-items-center theme-color">
-                <p class="mr-2 theme-color">1 - (title of the second document added)</p>
-                <i class="mr-1 fa fa-edit"></i>
-                <i class="fa fa-trash"></i>
+                <i class="mr-1 fa fa-edit" onClick="onEditDoc()"></i>
+                <i class="fa fa-trash" onClick="onDeleteDoc()"></i>
             </div>
         </div>
     </div>
