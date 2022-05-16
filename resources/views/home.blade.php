@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid pt-7 pb-7">
+<div class="container-fluid main-container pt-7 pb-7">
     <div class="filter-row">
         <h3 class="text-white mb-0 mr-2">Filter:</h3>
         <button class="btn d-flex justify-content-between">
@@ -28,8 +28,6 @@
         </button>
     </div>
     <div class="main-card rounded">
-        
-
         <div class="card-col col-lg-2 col-md-12">
             <div class="row m-0 mb-2 align-items-center">
                 <h2 class="text-white p-0 pl-2 m-0">Domain</h2>
@@ -72,7 +70,7 @@
                 <h2 class="text-white ml-1 mr-3">:</h2>
                 <div class="col-7 p-0 d-flex align-items-center bg-white rounded">
                     <input type="url" class="col rounded border-0" placeholder="Enter domain">
-                    <i class="col-1 fa fa-search"></i>
+                    <i class="col-1 fa fa-search text-dark"></i>
                 </div>
             </div>
             <div class="p-2 inner-card rounded">
@@ -134,7 +132,7 @@
                         <h4 class="text-white mr-3">Search email:</h4>
                         <div class="col pl-0 d-flex align-items-center bg-white rounded">
                             <input type="email" class="col rounded border-0" placeholder="Enter an email address...">
-                            <i class="col-1 fa fa-search"></i>
+                            <i class="col-1 fa fa-search text-dark"></i>
                         </div>
                     </div>
                     <div class="form-check d-flex align-items-center">

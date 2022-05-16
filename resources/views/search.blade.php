@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid pt-7 pb-7">
+<div class="container-fluid main-container pt-7 pb-7">
     <div class="text-center text-white">
         <h1 class="text-white">Search Our Database</h1>
         <h4 class="text-white">Is your email or the email of a colleague at risk?</h4>
@@ -15,7 +15,7 @@
         <div class="container d-flex bg-white rounded search-form">
             <input type="email" class="form-control border-0" id="search-form" placeholder="Enter an email address..." name="email">
             <div class="d-flex align-items-center text-center">
-                <button class="btn p-0 border-0"><h4 class="p-1 border border-primary rounded text-dark">Search</h4></button>
+                <button class="btn p-0 border-0"><h4 class="p-1 rounded" id="search-page-btn">Search</h4></button>
             </div>
         </div>
     </div>    

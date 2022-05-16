@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid pt-7 pb-7">
+<div class="container-fluid main-container pt-7 pb-7">
     <div class="text-white">
         <h1 class="text-white mb-2">Upload A Data Protection Policy</h1>
         <h4 class="text-white">This will allow users to ask questions and receive answers that are token directly from your data protection policy</h4>

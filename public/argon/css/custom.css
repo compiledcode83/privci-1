@@ -4,7 +4,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   color: white;
 }
 
-.container-fluid {
+.main-container {
   background-color: rgb(30,31,33);
 }
 
@@ -38,7 +38,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   margin: 0 20px 0 0;
   padding: 0 10px 0 10px;
   width: auto;
-  height: 30px;
+  height: 42.97px;
   border: 0;
   background-color: #009683;
   color: white;
@@ -76,7 +76,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   display: flex;
 }
 .medium-card .search-result-info p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .medium-card .page-selected {
@@ -85,12 +85,18 @@ div, h1, h2, h3, h4, h5, h6, p {
   color: #009683;
 }
 .medium-card {
-  font-size: 13px;
+  font-size: 16px;
 }
 
+.main-card .card-col:nth-child(2) select {
+  height: 35px;
+}
+.main-card .card-col:nth-child(2) .d-flex input:first-child {
+  height: 35px;
+}
 .inner-card .accordian-container {
   width: auto;
-  font-size: 13px;
+  font-size: 16px;
 }
 .inner-card .accordian-container .accordion {
   background-color: transparent;
@@ -109,7 +115,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   margin: 5px;
   padding: 0 18px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 16px;
   color: black;
   background-color: white;
   max-height: 0;
@@ -122,7 +128,7 @@ div, h1, h2, h3, h4, h5, h6, p {
   color: white;
 }
 .button-row button {
-  height: 30px;
+  height: 45px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -134,7 +140,7 @@ div, h1, h2, h3, h4, h5, h6, p {
 @media screen and (max-width: 1199px) {
   .button-row .d-flex {
     width: 100%;
-    justify-content: right;
+    /* justify-content: right; */
   }
 }
 
@@ -164,6 +170,13 @@ div, h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 767px) {
+  #sidenav-collapse-main .navbar-nav .nav-item a i {
+    color: black !important;
+  }
+  #sidenav-collapse-main .navbar-nav .nav-item a span {
+    color: black !important;
+  }
+
   .main-card .card-col:first-child .inner-card .form-check {
     width: 35%;
     margin: 0 10px 0 10px;
@@ -199,6 +212,10 @@ div, h1, h2, h3, h4, h5, h6, p {
 
 
 /* Begin Search Page Styles */
+
+#search-page-btn {
+ background-color: #009683;
+}
 
 .search-form {
   max-width: 600px;

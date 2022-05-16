@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container-fluid pt-7 pb-7" style="background-color:rgb(30,31,33);">
+<div class="container-fluid main-container pt-7 pb-7" style="background-color:rgb(30,31,33);">
     <div class="col-xl-12 mb-4">
         <div class="card-header" style="background-color:rgb(42,43,45); border-radius:5px;">
             <h1 class="m-0 mr-2 text-white">Account</h1>

@@ -70,7 +70,7 @@
                 </div>
             </div>
             <!-- Form -->
-            <form class="mt-4 mb-3 d-md-none">
+            <!-- <form class="mt-4 mb-3 d-md-none">
                 <div class="input-group input-group-rounded input-group-merge">
                     <input type="search" class="form-control form-control-rounded form-control-prepended"
                         placeholder="{{ __('Search') }}" aria-label="Search">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </form> -->
             <!-- Navigation -->
             <ul class="navbar-nav">
                 <li class="nav-item">
